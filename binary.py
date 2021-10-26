@@ -28,8 +28,12 @@ if x!=-1:
 else:
     print("  Element not found")
    
-   
-    for c in range(len(a)):
-        if(a[c]>p):
-            print(p," can be inserted at index ",c)
-            break
+    z=len(a)
+    if(p>a[z-1]):
+        print(p,"can be inserted at index",z)
+    else:
+        for c in range(z):
+           if(a[c]>p):
+              print(p," can be inserted at index ",c)
+              break
+    
